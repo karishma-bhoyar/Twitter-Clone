@@ -23,7 +23,7 @@ class MyApp extends ConsumerWidget {
     final currentAcount = ref.watch(currentUserAccountProvider);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Twitter Clone',
+      title: 'Twitter Clone App',
       theme: AppTheme.theme,
       home: currentAcount.when(
           data: (user) {
